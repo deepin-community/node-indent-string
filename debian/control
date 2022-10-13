@@ -1,0 +1,23 @@
+Source: node-indent-string
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Sarath M S <debian@sarathms.me>
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , node-tape <!nocheck>
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-indent-string
+Vcs-Git: https://salsa.debian.org/js-team/node-indent-string.git
+Homepage: https://github.com/sindresorhus/indent-string
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-indent-string
+Architecture: all
+Depends: ${misc:Depends}
+Multi-Arch: foreign
+Description: Indent each line in a string
+ A node.js module that provides API for to indent lines in a string.
+ .
+ Node.js is an event-based server-side JavaScript engine.
